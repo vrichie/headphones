@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+h1,
+h2 {
+  letter-spacing: 2px;
+}
+span,
+b {
+  font-size: 13px;
+  color: grey;
+}
+
+p {
+  font-size: 13px;
+  color: grey;
+}
