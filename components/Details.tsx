@@ -15,9 +15,9 @@ const Dream = () => {
     <div className="container flex md:flex-row flex-col items-center justify-between gap-10">
       <div
         id="text"
-        className="flex-1 flex flex-col  items-start gap-5 TEXT-LEFT"
+        className="flex-1 flex flex-col  items-start gap-10 TEXT-LEFT"
       >
-        <h1 className="text-4xl">
+        <h1 className="md:text-6xl text-3xl ">
           DREAM WIRELESS <br />
           <b className="text-yellow-400">HEADPHONES</b>
         </h1>
@@ -28,19 +28,37 @@ const Dream = () => {
         </p>
         <ButtonOutline text="Get Started" />
       </div>
-      <div id="image" className="h-[50vh] flex-1 flex bg-red-300"></div>
+      <div
+        id="image"
+        className="flex-1 flex items-center justify-center  rounded-xl overflow-hidden"
+      >
+        <img
+          src="/details.jpg"
+          alt=""
+          className="md:w-4/5 w-full object-cover object-center aspect-square  rounded-xl overflow-hidden"
+        />
+      </div>
     </div>
   );
 };
 const Fusion = () => {
   return (
     <div className="container flex md:flex-row flex-col items-center justify-between gap-10">
-      <div id="image" className="h-[50vh] flex-1 bg-red-300"></div>{" "}
+      <div
+        id="image"
+        className=" flex-1 flex items-center justify-center rounded-xl overflow-hidden"
+      >
+        <img
+          src="/details2.jpg"
+          alt=""
+          className="md:w-4/5 w-full object-cover object-center aspect-square  rounded-xl overflow-hidden"
+        />
+      </div>
       <div
         id="text"
-        className="flex-1 flex flex-col  items-start gap-5 TEXT-LEFT"
+        className="flex-1 flex flex-col  items-start gap-10 TEXT-LEFT"
       >
-        <h1 className="text-4xl">
+        <h1 className="md:text-6xl text-3xl ">
           <b className="text-yellow-400">FUSIONBASS</b>
           <br /> IN-EAR EARBUDS
         </h1>

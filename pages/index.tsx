@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import HeroText from "@/components/HeroText";
 import Details from "@/components/Details";
 import Hero from "@/components/Hero";
+import FullDetails from "@/components/FullDetails";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,8 @@ export default function Home() {
       <Nav />
       <HeroText />
       <Hero />
-      {/* <Details /> */}
+      <Details />
+      <FullDetails />
     </main>
   );
 }
