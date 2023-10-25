@@ -32,7 +32,7 @@ const FullDetails = () => {
       {details.map((item, index) => (
         <div
           key={index}
-          className="w-full py-10 border-b-[1px] border-white/50 flex gap-10 items-center justify-between transition text-white/70 hover:text-white"
+          className="w-full py-10 border-b-[1px] border-white/50 flex gap-10 items-center justify-between transition text-white/70 hover:text-white md:flex-row flex-col"
         >
           <h1 className="md:text-6xl text-3xl flex-1">{item.title}</h1>
           <p className="flex-1">{item.subtitle}</p>

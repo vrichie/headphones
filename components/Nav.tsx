@@ -39,7 +39,7 @@ const Nav = () => {
           <h2 className="font-bold">SOUNDS</h2>
         </span>
       </div>
-      <div className="w-fit flex items-center gap-6" id="links">
+      <div className="w-fit md:flex hidden items-center gap-6" id="links">
         {navLinks.map((item, index: number) => (
           <Link href={item.href} key={index}>
             <span
