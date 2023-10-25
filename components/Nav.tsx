@@ -64,7 +64,7 @@ const Nav = () => {
         </span>
 
         <span className="aspect-square p-3 bg-red-400 rounded-full text-white flex items-center justify-center">
-          <i className="fa-regular fa-cart-plus"></i>
+          <i className="fa-solid fa-cart-shopping"></i>
         </span>
       </div>
     </nav>

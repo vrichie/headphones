@@ -4,9 +4,12 @@ import Button from "./common/Buttons";
 const HeroText = () => {
   return (
     <section className="container flex md:flex-row flex-col items-center justify-between py-20 gap-6">
-      <div id="big-text" className="md:w-fit w-full">
+      <div
+        id="big-text"
+        className="md:w-fit  flex md:items-left items-center mx-auto"
+      >
         <h1
-          className="md:text-8xl text-4xl text-left font-bold "
+          className="md:text-8xl text-6xl text-left font-bold md:text-left text-center"
           data-aos="fade-up"
         >
           <b className="text-red-400">HEAVEN</b> ON <br />
@@ -15,7 +18,7 @@ const HeroText = () => {
       </div>
       <div
         id="small-text"
-        className="md:w-fit w-full flex flex-col md:items-end items-start gap-6"
+        className="md:w-fit w-full flex flex-col md:items-end items-center gap-6"
       >
         <img
           src="/waves.png"
@@ -23,7 +26,7 @@ const HeroText = () => {
           className="w-fit aspect-video"
           data-aos="fade-in"
         />
-        <p className="w-[300px] md:text-right text-left" data-aos="fade-up">
+        <p className="w-[300px] md:text-right text-center" data-aos="fade-up">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, velit
           quae consequatur est tenetur molestias debitis reiciendis. Voluptate,
           aut pariatur?
