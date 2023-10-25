@@ -19,6 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   scroll-behavior: smooth;
+  overflow-x: hidden;
   background: linear-gradient(
       to bottom,
       transparent,

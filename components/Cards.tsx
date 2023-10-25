@@ -37,7 +37,7 @@ const Cards = () => {
             className="w-full aspect-square object-center object-cover"
           />
           <h1
-            data-aos="fade-right"
+            data-aos="fade-up"
             className="absolute bottom-4 left-0 text-yellow-400 font-bold md:text-4xl text-2xl bg-black rounded-tr-xl  rounded-br-xl p-3"
           >
             {item.text}

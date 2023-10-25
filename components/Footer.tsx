@@ -51,7 +51,7 @@ const Footer = () => {
         <div
           className="w-fit flex items-center gap-3"
           id="logo"
-          data-aos="fade-right"
+          data-aos="fade-up"
         >
           <div className="md:w-16 w-14 aspect-square bg-yellow-400 rounded-full flex items-center justify-center">
             <img src="/logo.png" alt="" className="md:w-10 w-8" />
@@ -80,7 +80,7 @@ const Footer = () => {
         <div
           className="w-fit text-right flex items-end gap-2 flex-col"
           id="icons"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <p>Hello@world.co</p>
           <h3>000-111-222-333</h3>

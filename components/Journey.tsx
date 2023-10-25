@@ -29,7 +29,7 @@ const Journey = () => {
       id="about"
     >
       <section className="container py-20 flex flex-col gap-20 ">
-        <div className="w-full flex items-end justify-between md:flex-row flex-col rounded-xl overflow-hidden gap-4">
+        <div className="w-full flex md:items-end items-start justify-between md:flex-row flex-col rounded-xl overflow-hidden gap-4">
           <h1
             className="md:text-8xl font-bold text-4xl text-white"
             data-aos="fade-up"
@@ -47,7 +47,7 @@ const Journey = () => {
         </div>
         <div className="w-full flex md:flex-row flex-col gap-8 items-start md:mt-20 justify-between">
           <div
-            className="w-fit flex flex-col gap-4 items-start"
+            className="md:w-fit w-full flex flex-col gap-4 items-start"
             data-aos="fade-up"
           >
             {/* headers */}

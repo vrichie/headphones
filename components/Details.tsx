@@ -15,7 +15,7 @@ const Dream = () => {
     <div className="container flex md:flex-row flex-col items-center justify-between gap-10 py-20">
       <div
         id="text"
-        className="flex-1 flex flex-col  items-start gap-10 TEXT-LEFT"
+        className="flex-1 flex flex-col  items-start gap-10 text-left"
       >
         <h1 className="md:text-6xl text-3xl " data-aos="fade-up">
           DREAM WIRELESS <br />
@@ -34,7 +34,7 @@ const Dream = () => {
       >
         <img
           src="/details.jpg"
-          data-aos="fade-left"
+          data-aos="fade-up"
           alt=""
           className="md:w-4/5 w-full object-cover object-center aspect-square  rounded-xl overflow-hidden"
         />
@@ -51,7 +51,7 @@ const Fusion = () => {
       >
         <img
           src="/details2.jpg"
-          data-aos="fade-right"
+          data-aos="fade-up"
           alt=""
           className="md:w-4/5 w-full object-cover object-center aspect-square  rounded-xl overflow-hidden"
         />
