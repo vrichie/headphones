@@ -24,7 +24,7 @@ const Nav = () => {
     },
     {
       name: "FAQ",
-      href: "/#faq",
+      href: "/#faqs",
     },
   ];
 
@@ -32,7 +32,7 @@ const Nav = () => {
     <nav className="container flex items-center justify-between py-5" id="top">
       <div className="w-fit flex items-center gap-3" id="logo">
         <div className="w-20 aspect-square bg-yellow-400 rounded-full flex items-center justify-center">
-          <img src="/favicon.ico" alt="" className="w-18" />
+          <img src="/logo.png" alt="" className="w-10" />
         </div>
         <span className="flex flex-col gap-1 items-start">
           <h2 className="font-bold text-red-400">SPECIAL</h2>
@@ -54,8 +54,18 @@ const Nav = () => {
           </Link>
         ))}
       </div>
-      <div className="w-fit" id="icons">
-        <span className="aspect-square p-3 bg-red-400 rounded-full ">HR</span>
+      <div className="w-fit flex items-center gap-4" id="icons">
+        <span className="aspect-square p-3 border-[1px] border-white/50 rounded-full text-white flex items-center justify-center">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </span>
+
+        <span className="aspect-square p-3 border-[1px] border-white/50 rounded-full text-white flex items-center justify-center">
+          <i className="fa-regular fa-heart"></i>
+        </span>
+
+        <span className="aspect-square p-3 bg-red-400 rounded-full text-white flex items-center justify-center">
+          <i className="fa-regular fa-cart-plus"></i>
+        </span>
       </div>
     </nav>
   );

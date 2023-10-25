@@ -1,26 +1,46 @@
 import React from "react";
 import Button, { Button2 } from "./common/Buttons";
 
+const items = [
+  {
+    img: "/white.jpg",
+  },
+  {
+    img: "/yellow.jpg",
+  },
+];
+
 const Hero = () => {
+  const [active, setActive] = React.useState<number>(0);
+
   return (
     <section className="container  flex md:flex-row flex-col gap-4 items-center py-10">
       <div className="flex-1 md:pr-4 h-full flex flex-col items-start gap-12 justify-between">
         <img
           src="/top.jpg"
+          data-aos="fade-in"
           alt=""
           className="w-full aspect-square object-cover object-center border-b-[1px] border-white/50 pb-4"
         />
         <div className="flex flex-col items-start gap-6 ">
           <span className="w-fit flex items-center gap-4">
-            <div className="w-16 aspect-square  flex items-center justify-center text-2xl rounded-full border-white/50 border-2">
+            <div
+              data-aos="zoom-in"
+              className="w-16 aspect-square  flex items-center justify-center text-2xl rounded-full border-white/50 border-2"
+            >
               <i className="fa-brands fa-android text-white"></i>
             </div>
-            <div className="w-16 aspect-square flex items-center justify-center text-2xl rounded-full border-white/50 border-2">
+            <div
+              data-aos="zoom-in"
+              className="w-16 aspect-square flex items-center justify-center text-2xl rounded-full border-white/50 border-2"
+            >
               <i className="fa-brands fa-apple  text-white"></i>
             </div>
           </span>
-          <h2 className="md:text-3xl text-xl">Lorem ipsum dolor sit amet.</h2>
-          <p>
+          <h2 className="md:text-3xl text-xl" data-aos="fade-up">
+            Lorem ipsum dolor sit amet.
+          </h2>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint
             deserunt ullam voluptas delectus qui fuga iusto labore repellendus
             dolore velit quisquam ex ipsum officiis debitis, quas tempora quo
@@ -32,23 +52,33 @@ const Hero = () => {
         <img
           src="/main.jpg"
           alt=""
+          data-aos="fade-in"
           className="w-full md:h-[100%] object-center"
         />{" "}
       </div>
       <div className="flex-1 pl-4 flex h-full justify-between flex-col items-start gap-8">
-        <h2 className="md:text-4xl text-2xl">
+        <h2 className="md:text-4xl text-2xl" data-aos="fade-up">
           Lorem ipsum dolor sit amet consectetur.
         </h2>
         <div className="w-full flex flex-col items-start gap-3">
-          <span className="w-full py-2 border-b-[1px] border-white/50 flex items-center justify-between">
+          <span
+            className="w-full py-2 border-b-[1px] border-white/50 flex items-center justify-between"
+            data-aos="fade-up"
+          >
             <b>Weight</b>
             <p>217 g</p>
           </span>
-          <span className="w-full py-2 border-b-[1px] border-white/50 flex items-center justify-between">
+          <span
+            className="w-full py-2 border-b-[1px] border-white/50 flex items-center justify-between"
+            data-aos="fade-up"
+          >
             <b>Battery Life</b>
             <p>Upto 40 hrs</p>
           </span>
-          <span className="w-full py-2 border-b-[1px] border-white/50 flex items-center justify-between">
+          <span
+            className="w-full py-2 border-b-[1px] border-white/50 flex items-center justify-between"
+            data-aos="fade-up"
+          >
             <b>Water Resistance</b>
             <p>IPX64</p>
           </span>
@@ -57,11 +87,22 @@ const Hero = () => {
           <div
             id="color"
             className="w-full border-[1px] border-white/50 p-4 rounded-full flex items-center justify-between"
+            data-aos="fade-up"
           >
             <h3>Color Option </h3>
             <div className="flex gap-2 w-fit items-center justify-between">
-              <div className="bg-white border-b-[1px] border-white/50 p-2 w-8 aspect-square rounded-full"></div>
-              <div className="bg-yellow-400 border-b-[1px] border-white/50 p-2 w-8 aspect-square rounded-full"></div>
+              <div
+                onClick={() => setActive(0)}
+                className={`${
+                  active === 0 ? "bg-white" : ""
+                } transition border-[1px] border-white/50 p-2 w-8 aspect-square rounded-full`}
+              ></div>
+              <div
+                onClick={() => setActive(1)}
+                className={`${
+                  active === 1 ? "bg-yellow-400" : ""
+                } transition border-[1px] border-yellow-400/50 p-4 w-8 aspect-square rounded-full`}
+              ></div>
             </div>
           </div>
           <div
@@ -69,9 +110,10 @@ const Hero = () => {
             className="w-full aspect-video rounded-xl overflow-hidden mt-4"
           >
             <img
-              src="/top.jpg"
+              src={items[active].img}
               alt=""
-              className="w-full aspect-video object-center object-cover"
+              data-aos="fade-in"
+              className="w-full transition aspect-video object-center object-cover"
             />
           </div>
           <div

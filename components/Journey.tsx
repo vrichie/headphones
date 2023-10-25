@@ -24,10 +24,16 @@ const Journey = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-b from-gray-700/40 via-gray-900/40 to-black rounded-xl">
+    <div
+      className="w-full bg-gradient-to-b from-gray-700/40 via-gray-900/40 to-gray-950/95 rounded-xl"
+      id="about"
+    >
       <section className="container py-20 flex flex-col gap-20 ">
         <div className="w-full flex items-end justify-between md:flex-row flex-col rounded-xl overflow-hidden">
-          <h1 className="md:text-4xl font-bold text-2xl text-white">
+          <h1
+            className="md:text-4xl font-bold text-2xl text-white"
+            data-aos="fade-up"
+          >
             Journey Through <br />
             Headphone <br />
             Euohoria
@@ -35,6 +41,7 @@ const Journey = () => {
           <img
             src="/4pic.jpg"
             alt="journey"
+            data-aos="fade-in"
             className="aspect-video object-cover object-center md:w-3/5 w-full"
           />
         </div>
@@ -44,6 +51,7 @@ const Journey = () => {
             {heads.map((item, index: number) => (
               <div
                 key={index}
+                data-aos="fade-up"
                 onClick={() => changeActive(item.i)}
                 className={`${
                   index === active ? "text-white" : "text-white/50"
@@ -60,9 +68,18 @@ const Journey = () => {
           </div>
           {/* body */}
           <div className="md:w-3/5 w-full ">
-            <p className="text-lg transition">{heads[active].body}</p>
+            <p className="text-lg transition" data-aos="fade-up">
+              {heads[active].body}
+            </p>
           </div>
         </div>
+
+        <img
+          src="/1.jpg"
+          alt="banner"
+          data-aos="fade-in"
+          className="w-full aspect-video object-cover object-center rounded-xl"
+        />
       </section>
     </div>
   );

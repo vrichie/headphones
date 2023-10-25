@@ -19,7 +19,6 @@ export default function Home() {
       <HeroText />
       <Hero />
       <Journey />
-      <Banner />
       <Details />
       <Banner />
 

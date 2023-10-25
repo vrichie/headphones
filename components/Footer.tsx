@@ -48,9 +48,13 @@ const Footer = () => {
         className="w-full flex md:flex-row flex-col items-center justify-between py-5 gap-6"
         id="bottom"
       >
-        <div className="w-fit flex items-center gap-3" id="logo">
+        <div
+          className="w-fit flex items-center gap-3"
+          id="logo"
+          data-aos="fade-right"
+        >
           <div className="w-20 aspect-square bg-yellow-400 rounded-full flex items-center justify-center">
-            <img src="/favicon.ico" alt="" className="w-18" />
+            <img src="/logo.png" alt="" className="w-10" />
           </div>
           <span className="flex flex-col gap-1 items-start">
             <h2 className="font-bold text-red-400">SPECIAL</h2>
@@ -61,6 +65,7 @@ const Footer = () => {
           {navLinks.map((item, index: number) => (
             <Link href={item.href} key={index}>
               <span
+                data-aos="fade-up"
                 className={`${
                   active === index ? "text-white" : "text-white/50"
                 } transition`}
@@ -75,6 +80,7 @@ const Footer = () => {
         <div
           className="w-fit text-right flex items-end gap-2 flex-col"
           id="icons"
+          data-aos="fade-left"
         >
           <p>Hello@world.co</p>
           <h3>000-111-222-333</h3>
