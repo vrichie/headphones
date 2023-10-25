@@ -46,12 +46,14 @@ const Journey = () => {
           />
         </div>
         <div className="w-full flex md:flex-row flex-col gap-8 items-start md:mt-20 justify-between">
-          <div className="w-fit flex flex-col gap-4 items-start">
+          <div
+            className="w-fit flex flex-col gap-4 items-start"
+            data-aos="fade-up"
+          >
             {/* headers */}
             {heads.map((item, index: number) => (
               <div
                 key={index}
-                data-aos="fade-up"
                 onClick={() => changeActive(item.i)}
                 className={`${
                   index === active ? "text-white" : "text-white/50"
@@ -68,7 +70,7 @@ const Journey = () => {
           </div>
           {/* body */}
           <div className="md:w-3/5 w-full ">
-            <p className="text-lg transition" data-aos="fade-up">
+            <p className=" transition" data-aos="fade-up">
               {heads[active].body}
             </p>
           </div>
