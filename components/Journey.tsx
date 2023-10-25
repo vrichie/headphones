@@ -29,9 +29,9 @@ const Journey = () => {
       id="about"
     >
       <section className="container py-20 flex flex-col gap-20 ">
-        <div className="w-full flex items-end justify-between md:flex-row flex-col rounded-xl overflow-hidden">
+        <div className="w-full flex items-end justify-between md:flex-row flex-col rounded-xl overflow-hidden gap-4">
           <h1
-            className="md:text-4xl font-bold text-2xl text-white"
+            className="md:text-8xl font-bold text-4xl text-white"
             data-aos="fade-up"
           >
             Journey Through <br />
@@ -57,7 +57,7 @@ const Journey = () => {
                 onClick={() => changeActive(item.i)}
                 className={`${
                   index === active ? "text-white" : "text-white/50"
-                } cursor-pointer flex items-center justify-between md:min-w-[250px] border-b-[1px] py-3 border-white/50`}
+                } cursor-pointer flex items-center justify-between md:min-w-[250px] min-w-full border-b-[1px] py-3 border-white/50`}
               >
                 <h3>{item.name}</h3>
                 <i
