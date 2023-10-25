@@ -31,8 +31,8 @@ const Nav = () => {
   return (
     <nav className="container flex items-center justify-between py-5" id="top">
       <div className="w-fit flex items-center gap-3" id="logo">
-        <div className="w-20 aspect-square bg-yellow-400 rounded-full flex items-center justify-center">
-          <img src="/logo.png" alt="" className="w-10" />
+        <div className="md:w-16 w-14 aspect-square bg-yellow-400 rounded-full flex items-center justify-center">
+          <img src="/logo.png" alt="" className="md:w-10 w-8" />
         </div>
         <span className="flex flex-col gap-1 items-start">
           <h2 className="font-bold text-red-400">SPECIAL</h2>
